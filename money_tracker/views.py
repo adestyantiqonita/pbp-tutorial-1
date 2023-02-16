@@ -8,10 +8,7 @@ def show_tracker(request):
     context = {
         'list_of_transactions': transaction_data,
         'name': 'Qonita Adestyanti'
-    }
-    return render(request, "tracker.html", context)
-
-{% for transaction in list_of_transactions %}
+        {% for transaction in list_of_transactions %}
     <tr>
         <td>{{transaction.name}}</td>
         <td>{{transaction.type}}</td>
@@ -20,3 +17,6 @@ def show_tracker(request):
         <td>{{transaction.description}}</td>
     </tr>
 {% endfor %}
+    }
+    return render(request, "tracker.html", context)
+
