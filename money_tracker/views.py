@@ -3,4 +3,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def show_tracker(request):
-    return render(request, "money_tracker.html")
+    return render(request, "tracker.html")

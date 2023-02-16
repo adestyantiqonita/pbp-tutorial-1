@@ -66,6 +66,12 @@ TEMPLATES = [
             ],
         },
     },
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],
+        'APP_DIRS': True,
+        ...
+    }
 ]
 
 WSGI_APPLICATION = "django_tutorial.wsgi.application"
