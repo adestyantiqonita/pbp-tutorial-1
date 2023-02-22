@@ -25,6 +25,14 @@
         <td>{{transaction.description}}</td>
     </tr>
     {% endfor %}
+
+    <br>
+        <a href="{% url 'money_tracker:create_transaction' %}">
+            <button>
+                Transaksi Baru
+            </button>
+        </a>
+    </br>
 </table>
 
 {% endblock content %}
